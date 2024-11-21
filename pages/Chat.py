@@ -9,6 +9,7 @@ load_dotenv()
 # Retrieve the API key from environment variables
 api_key = os.getenv('API_KEY')
 
+
 # Configure GenerativeAI model
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel(model_name='gemini-1.5-pro-latest',
